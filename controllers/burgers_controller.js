@@ -12,9 +12,7 @@ app.get('/', function(req, res) {
 		let hbsObject = {
 			burgers: data
 		};
-		console.table(hbsObject);
-		res.send(hbsObject);
-		// res.render('index', hbsObject);
+		res.render('index', hbsObject);
 	});
 });
 
