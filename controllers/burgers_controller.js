@@ -25,7 +25,8 @@ app.post('/api/burgers', function(req, res) {
 
 app.put('/api/burgers/:id', function(req, res) {
 	let idNum = req.params.id;
-	burger.update({ bool: req.body.devoured }, idNum, function(result) {
+	let bool = req.body.devoured;
+	burger.update(bool, idNum, function(result) {
 		if (result.changedRows == 0) {
 			// If no rows were changed, then the ID must not exist, so 404
 			return res.status(404).end();

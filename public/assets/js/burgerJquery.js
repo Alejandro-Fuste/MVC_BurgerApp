@@ -4,8 +4,6 @@ $(function() {
 	$('.create-form').on('submit', (e) => {
 		e.preventDefault();
 
-		console.log('click');
-
 		let newBurger = {
 			name: $('#burg').val().trim(),
 			devoured: $('[name=devoured]:checked').val().trim()
@@ -24,16 +22,21 @@ $(function() {
 
 	$('.change-devour').on('click', (e) => {
 		e.preventDefault();
-		console.log('click');
 
-		let id = $(this).data('id');
-		let newDevour = $(this).data('devoured');
+		let id = $('.change-devour').data('id');
+		let newDevour = $('.change-devour').data('devoured');
 
 		let newDevourState = {
-			devoured: newDevour
+			id: id,
+			devoured: 1
 		};
 
-		$.ajax('/api/burgers/:id', {
+		console.log(this);
+		console.log(id);
+		console.log(newDevour);
+		console.log(newDevourState);
+
+		$.ajax(`/api/burgers/${id}`, {
 			type: 'PUT',
 			data: newDevourState
 		}).then(() => {
