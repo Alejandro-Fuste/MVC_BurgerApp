@@ -5,17 +5,17 @@ const orm = require('../config/orm');
 
 const burger = {
 	all: function(cb) {
-		orm.selectAll('burgers', function(res) {
+		orm.selectAll('burgers_db.burgers', function(res) {
 			cb(res);
 		});
 	},
 	create: function(b_name, dev, cb) {
-		orm.insertOne('burgers', b_name, dev, function(res) {
+		orm.insertOne('burgers_db.burgers', b_name, dev, function(res) {
 			cb(res);
 		});
 	},
 	update: function(bool, idNum, cb) {
-		orm.updateOne('burgers', bool, idNum, function(res) {
+		orm.updateOne('burgers_db.burgers', bool, idNum, function(res) {
 			cb(res);
 		});
 	}
