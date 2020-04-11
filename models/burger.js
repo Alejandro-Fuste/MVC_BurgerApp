@@ -3,7 +3,7 @@ const orm = require('../config/orm');
 
 // code that calls the ORM functions
 
-const table = 'burgers';
+let table = 'burgers';
 
 const burger = {
 	all: function(cb) {
