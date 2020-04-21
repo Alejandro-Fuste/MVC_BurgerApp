@@ -4,7 +4,7 @@
 
 ## Description 
 
-The purpose of this project is to use the MVC design pattern, with MySQL, NodeJS, Express, Handlebars, and a custom made ORM, to create a burger logger. 
+The purpose of this project is to use the MVC design pattern with MySQL, NodeJS, Express, Handlebars, and a custom made ORM, to create a burger logger. 
 
 ## User Story
 
