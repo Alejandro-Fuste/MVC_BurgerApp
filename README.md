@@ -70,7 +70,7 @@ npm test
 
 If you have any questions about the repo, open an issue or contact [Alejandro Fuste](https://github.com/ZepCap) directly through GitHub.
 
-## Finished HW GIF
+## Sample GIF
 
 <img src="./public/assets/images/burgerGif.gif" alt="finished gif 1" style="border-radius: 16px" width="300" height="180"/>
 
