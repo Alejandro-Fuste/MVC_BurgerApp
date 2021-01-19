@@ -8,7 +8,7 @@
 
 ## Description 
 
-The purpose of this project is to use the MVC design pattern with MySQL, NodeJS, Express, Handlebars, and a custom made ORM, to create a burger logger. You can see the deployed site by [clicking on this link!](https://zep-burger.herokuapp.com/).
+The purpose of this project is to use the MVC design pattern with <strong>MySQL</strong>, <strong>nodeJS</strong>, <strong>Express</strong>, <strong>Handlebars</strong>, and a custom made <strong>ORM</strong> to create a burger logger. You can see the deployed site by [clicking on this link!](https://zep-burger.herokuapp.com/).
 
 ## User Story
 
